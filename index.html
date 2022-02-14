@@ -18,7 +18,12 @@
       href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link id="theme-style" type="text/css" rel="stylesheet" href="">
+    
+    <link type="text/css" rel="stylesheet" href="css/lightslider.css" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/lightslider.js"></script>
     <title>Document</title>
   </head>
   <body>
@@ -47,10 +52,10 @@
               Personalize theme
             </h5>
             <div id="theme-options-wrapper">
-              <div id="light-mode" class="theme-dot"></div>
-              <div id="blue-mode" class="theme-dot"></div>
-              <div id="green-mode" class="theme-dot"></div>
-              <div id="purple-mode" class="theme-dot"></div>
+              <div data-mode="light" id="light-mode" class="theme-dot"></div>
+              <div data-mode="blue" id="blue-mode" class="theme-dot"></div>
+              <div data-mode="green" id="green-mode" class="theme-dot"></div>
+              <div data-mode="purple" id="purple-mode" class="theme-dot"></div>
             </div>
             <p id="settings-note">
               These settings will be saved<br />
@@ -118,12 +123,58 @@
     </section>
 
     <section class="s1">
-      <div class="main-container">Portfolio</div>
+      <div class="main-container">
+        <h3 style="text-align: center; line-height: 0;margin-top: 50px;;">My Skills</h3>
+        <div class="carousel-wrapper">
+          <ul id="autoWidth" class:"cS-hidden">
+           <li id="item-a">
+            <div class="car">
+              <i class="fa-brands fa-python"></i>
+              
+            </div>
+           </li>
+
+           <li id="item-b">
+            <div class="car">
+              <i class="fa-brands fa-html5"></i>
+             </div>
+           </li>
+
+           <li id="item-c">
+            <div class="car">
+              <i class="fa-brands fa-sass"></i>
+              
+            </div>
+           </li>
+
+           <li id="item-d">
+            <div class="car">
+              <i class="fa-brands fa-bootstrap"></i>
+              
+            </div>
+           </li>
+
+           <li id="item-e">
+            <div class="car">
+              <i class="fa-brands fa-js"></i>
+              
+            </div>
+           </li>
+
+           <li id="item-f">
+            <div class="car">
+              <i class="fa-solid fa-c"></i>
+              
+            </div>
+           </li>
+          </ul>
+        </div>
+      </div>
     </section>
 
     <section class="s2">
       <div class="main-container">
-        <h3 style="text-align: center; line-height: 0">Leave a message!</h3>
+        <h3 style="text-align: center; line-height: 0;margin-top: 40px;">Leave a message!</h3>
         <form id="contact-form">
           <label>First Name</label>
           <input class="input-field" type="text" name="firstname" />
@@ -142,6 +193,7 @@
     </section>
 
     <footer>
+      <div class="main-container">
       <a href="viswambhari2002@gmail.com" class="footer-link" target="_blank"
         >viswambhari2002@gmail.com</a
       >
@@ -177,15 +229,18 @@
         </li>
 
         <li class="social-item">
-          <a
-            href="https://www.linkedin.com/in/viswambhari-anandan/"
-            target="_blank"
-            class="social-link"
-          >
-            <i class="fa-brands fa-linkedin"></i>
-          </a>
-        </li>
-      </ul>
+            <a
+              href="https://www.linkedin.com/in/viswambhari-anandan/"
+              target="_blank"
+              class="social-link"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+           </a>
+         </li>
+       </ul>
+      </div>
     </footer>
+   <script src="js/script.js" type="text/javascript"></script>
+
   </body>
 </html>
